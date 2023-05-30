@@ -38,7 +38,7 @@ const SecondPage = () => {
         </p>
         <br />
         <br />
-        <div className={styles.pwd}>
+        {/* <div className={styles.pwd}>
         <TextField id="filled-basic" 
      label="Password" 
      variant="filled" 
@@ -46,9 +46,9 @@ const SecondPage = () => {
         fullWidth
         />
          <Link>Forgot password?</Link>
-         </div>
+         </div> */}
     
-        <button className={styles.NextBtn}><Link to = '/' className={styles.subbtn}>Submit</Link></button>
+        <button className={styles.NextBtn}><Link to = '/singin' className={styles.subbtn}>Submit</Link></button>
       </div>
     </>
   );

@@ -117,12 +117,12 @@ const HandleClick = () => {
               fullWidth
               error={isValid}
             //   required
-            />
-
+            /></p>
+<p>
 <TextField
               id="filled-basic"
               type="passwoed"
-              label="passwoed"
+              label="Password" 
               variant="filled"
               onChange={e => setpassword(e.target.value)}
               fullWidth
@@ -130,10 +130,10 @@ const HandleClick = () => {
             //   required
             />
           </p>
-        
+       
          
         </Box>
-
+        <p><Link>forget password? </Link></p>
         <h4> Date of birth</h4>
 
 <p>

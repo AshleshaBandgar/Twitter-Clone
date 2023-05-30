@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: gray;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    margin-top: 3em;  
+    margin-top: 3em;
 }
 
-.container{
-    width:40vw;
+.container {
+    width: 40vw;
     margin: auto;
     background-color: white;
     display: flex;
@@ -24,29 +24,29 @@ body{
     height: 85vh;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: row;
     width: 100%;
-    
 }
 
-.box .close{
+.box .close {
     margin: 1em;
-    
 }
 
 .twittericon {
-    margin: 1em ;
+    margin: 1em;
     padding-left: 40%;
 }
-.container h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.container h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 1rem;
 }
 
-.google , .Apple{
-    background-color:aliceblue;
+.google,
+.Apple {
+    background-color: aliceblue;
     margin: 1rem;
     padding: 10px;
     border-radius: 1.5pc;
@@ -56,28 +56,28 @@ body{
     align-items: center;
 }
 
-.google p{
+.google p {
     padding-left: 10px;
 }
 
-.Apple p{
+.Apple p {
     padding-right: 10px;
 }
 
-.Or{
+.Or {
     background: #fff;
     width: 300px;
     margin: 10px;
 }
 
-.Or hr{
+.Or hr {
     border: 0;
     height: 1px;
     background: #c2c2c2;
     margin: 5px;
 }
 
-.Or span{
+.Or span {
     display: block;
     width: 40px;
     margin: auto;
@@ -85,12 +85,13 @@ body{
     font-size: 14px;
     margin-top: -16px;
 }
-.createButton{
+
+.createButton {
     color: white;
     text-decoration: none;
 }
 
-.Creating{
+.Creating {
     width: 300px;
     background-color: black;
     padding: 10px;
@@ -99,34 +100,53 @@ body{
     color: white;
 }
 
-.terms{
-    width:400px;
+.terms {
+    width: 400px;
     /* border: 1px solid red; */
-    text-align: justify;
+    text-align: center;
     padding: 20px;
-
     font-size: 10px;
     /* margin-top: 2px; */
     margin-bottom: 40px;
     color: rgb(94, 94, 94);
 }
 
-.blue{
+.blue {
     color: #00ACEE;
     padding: 5px;
 }
 
-.footer{
+.footer {
     width: 300px;
     text-align: left;
     display: flex;
 }
 
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 767px) {
+    .container {
+        /* background-color: red; */
+        align-items: center;
+        width: 60vw;
+        height: 60vh;
+        /*  */
+    }
+    .twittericon {
+        margin-left: -30px;
+        justify-content: center;
+    }
+    .google,
+    .Apple {
+        border-radius: 1.5pc;
+        width: 300px;
+    }
+    .Creating {
+        width: 300px;
+    }
+    .terms {
+        width: 500px;
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-bottom: 40px;
+        color: rgb(94, 94, 94);
+    }
+}

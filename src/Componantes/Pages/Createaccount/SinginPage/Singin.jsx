@@ -48,9 +48,9 @@ const Singin = () => {
     <div className={styles.Logobox}>
     <div className={styles.close}>
     <CloseIcon />
-  
-    <TwitterIcon className={styles.twitterLogo} style={{color: "#00ACEE", fontSize: "2em" }}/>
     </div>
+    <TwitterIcon className={styles.twitterLogo} style={{color: "#00ACEE", fontSize: "2em" }}/>
+   
     <h2>Sign In to Twitter</h2>
     <button className={styles.btn}>
    <FcGoogle className={styles.Googlelogo}/>
