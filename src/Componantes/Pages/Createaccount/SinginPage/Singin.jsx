@@ -7,38 +7,28 @@ import TextField from '@mui/material/TextField';
 import CloseIcon from '@mui/icons-material/Close';
 import { FcGoogle } from "react-icons/fc";
 import AppleIcon from '@mui/icons-material/Apple';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 const Singin = () => {
-    const[value, setValue] = useState([])    // to manage/store localStorage value
-    const[singin , setSingin] = useState([])  
-    const[name, setName] = useState([])  
-    const[email, setEmail] = useState([])
-    const[phone, setPhone] = useState([])
-    const[isValid , setisValid] = useState(false)
+     
+    const[name, setName] = useState('')  
+    const[email, setEmail] = useState('')
+    const[phone, setPhone] = useState('')
+    const navigate = useNavigate();
+    
 
-    const userName = localStorage.getItem("name") ? localStorage.getItem("name") : "demo"
+    const userName = localStorage.getItem('name') ? localStorage.getItem('name') : 'ashlesha'
     const userEmail = localStorage.getItem("email") ? localStorage.getItem("email") : "demo@gmail.com"
-    const userPhone = localStorage.getItem("phone") ? localStorage.getItem("name") : "123456789"
+    const userPhone = localStorage.getItem("phone") ? localStorage.getItem("phone") : "123456789"
 
 
     const handleClick = (e) => {
       e.preventDefault();
-      if(name === userName){
-        alert("login SUccessfull")
-      } else if(email === userEmail ) {
-        alert("login SUccessfull")
-      } else if(phone === userPhone){
-        alert("login SUccessfull")
+      if(name === userName || phone === userPhone || email === userEmail){
+         navigate('/Password')
+      } else{
+        alert("Invalid fields")
       }
       
-      
-
-
-      let newData = [...value,singin]
-      setValue(newData)
-      setSingin("")
-
-
 
     };
    
@@ -67,14 +57,13 @@ const Singin = () => {
      label="Phone,email, or username" 
      variant="filled" 
      style={{width:"45%" , m:3}}
-        onChange={(e) => setSingin(e.target.value)}
-        value={singin}
-        error={isValid}
+        onChange={(e) => setName(e.target.value)}
+        value={name}
         />
-     <button className={styles.btn}> <Link to= '/Password'>Next</Link></button>
+     <button className={styles.btn} onClick={handleClick}>Next</button>
      <button className={styles.btn}>Forgot password?</button>
      <br/>
-     <p className={styles.footer}>Don't have a account?<Link to= '/singup'> sing Up</Link></p>
+     <p className={styles.footer} >Don't have a account?<Link to= '/singup'> sing Up</Link></p>
     </div>
       
     </div>

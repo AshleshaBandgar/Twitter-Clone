@@ -2,7 +2,7 @@
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import React, { useState } from 'react'
 import styles from './FirstPage.module.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import TextField from "@mui/material/TextField";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
@@ -10,49 +10,32 @@ import Box from "@mui/material/Box";
 
 
 const Custemize = () => {
-  const [details , setDetails] = useState([])
-const[name, setName] = useState("")
-const[phone, setPhone] = useState("")
-const[email, setEmail] = useState("")
-const[dob, setDob] = useState("")
-const[password, setpassword] = useState("")
-const[isValid , setIsVaild] = useState(false)
+  const [name, setName] = useState("")
+  const [phone, setPhone] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
-const HandleClick = () => {
-  const OldDetails = [...details]
-  const newdetail = {
-    name : name,
-    phone : phone,
-    email: email,
-    dob : dob,
-    password: password
+  function HandleClick(e) {
+    e.preventDefault();
+    if (name === "") {
+      alert("name is required")
+    }
+    else if (phone === "") {
+      alert("phone is required")
+    } else if (email === "") {
+      alert("email is required")
+    }
+    else if (password === "") {
+      alert("password is required")
+    } else {
+      localStorage.setItem('name', name)
+      localStorage.setItem('phone', phone)
+      localStorage.setItem('email', email)
+      localStorage.setItem('password', password)
+      alert("Registered Successfully")
+    }
 
   }
-
-  const newDetails = OldDetails.concat(newdetail)
-  if(name == "" || phone == "" || email == "" || dob == "" || password == ""){
-    // alert("Fields cannt be blank")
-    setIsVaild(true)
-  } else {
-    setDetails(newDetails);
-    setIsVaild(false)
-  }
-
-
-
-  setDetails(newDetails);
-  setName("")
-  setPhone("")
-  setEmail("")
-  setDob("")
-  setpassword("")
-  
-
-
-  localStorage.setItem("details",JSON.stringify(newDetails));
-
-}
-
 
   return (
     <>
@@ -64,7 +47,7 @@ const HandleClick = () => {
           </p>
           {/* <h2>Step 1 of 5</h2> */}
         </header>
-        
+
         <h1>Create your account</h1>
 
         <Box
@@ -87,8 +70,9 @@ const HandleClick = () => {
               label="name"
               variant="filled"
               onChange={e => setName(e.target.value)}
+              value={name}
               fullWidth
-              error={isValid}
+
             //   required
             />
           </p>
@@ -96,51 +80,53 @@ const HandleClick = () => {
             {" "}
             <TextField
               id="filled-basic"
-              type="phone"
+              type="number"
               label="Phone"
               variant="filled"
               pattern="[0-9]"
               onChange={e => setPhone(e.target.value)}
+              value={phone}
               // ref={name}
               fullWidth
-              error={isValid}
             //   required
             />
           </p>
           <p>
-          <TextField
+            <TextField
               id="filled-basic"
               type="email"
               label="Email"
               variant="filled"
               onChange={e => setEmail(e.target.value)}
+              value={email}
               fullWidth
-              error={isValid}
+
             //   required
             /></p>
-<p>
-<TextField
+          <p>
+            <TextField
               id="filled-basic"
               type="passwoed"
-              label="Password" 
+              label="Password"
               variant="filled"
-              onChange={e => setpassword(e.target.value)}
+              onChange={e => setPassword(e.target.value)}
+              value={password}
               fullWidth
-              error={isValid}
+
             //   required
             />
           </p>
-       
-         
+
+
         </Box>
         <p><Link>forget password? </Link></p>
         <h4> Date of birth</h4>
 
-<p>
-  This will not be shown publicly. Confirm your own age, even if this
-  account is for a business, a pet, or something else.
-</p>
-<Box
+        <p>
+          This will not be shown publicly. Confirm your own age, even if this
+          account is for a business, a pet, or something else.
+        </p>
+        <Box
           component="form"
           sx={{
             "& > :not(style)": {
@@ -154,20 +140,19 @@ const HandleClick = () => {
           autoComplete="off"
         >
 
-<p> <TextField
-              id="filled-basic"
-              type="date"
+          <p> <TextField
+            id="filled-basic"
+            type="date"
             //   label="Phone"
-              variant="filled"
-              fullWidth
-              required
-              onChange={e => setDob(e.target.value)}
-              error={isValid}
-            />
+            variant="filled"
+            fullWidth
+            required
+
+          />
           </p>
-          
+
         </Box>
-        <button className={styles.NextBtn} onClick={HandleClick}> <Link to='/secondPage' className={styles.NextButton}>Next</Link></button>
+        <button className={styles.NextBtn} onClick={HandleClick}> <Link to='/singin' className={styles.NextButton}>Next</Link></button>
       </div>
     </>
   );
