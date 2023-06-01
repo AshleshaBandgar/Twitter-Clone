@@ -8,7 +8,6 @@ import {
     FaRegBookmark,
     FaClipboardList,
     FaUserAlt,
-    FaMehBlank,
 } from "react-icons/fa";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Profile from './Profile';

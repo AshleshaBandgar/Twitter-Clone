@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './profile.module.css'
 import { FaMehBlank } from "react-icons/fa"
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 
 export default function Profile() {
