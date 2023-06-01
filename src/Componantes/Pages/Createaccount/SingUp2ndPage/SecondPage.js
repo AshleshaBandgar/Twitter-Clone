@@ -1,4 +1,4 @@
-//step2
+
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import React from "react";
 import styles from './SecondPage.module.css'

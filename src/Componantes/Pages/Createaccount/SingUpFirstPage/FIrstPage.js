@@ -151,14 +151,7 @@ const SignUp = () => {
             id="filled-basic" 
             label="Name"
             variant="filled" 
-            // sx={{
-            //   color: "white",
-             
-            //   borderRadius: "5px",
-            //   border: "1px solid white",
-            //   "& label": { color: "white" },
-            //   "& input": { color: "white" },
-            // }} 
+            
             onChange={(e) => handleName(e)}
           />
           <TextField className={styles.input} 

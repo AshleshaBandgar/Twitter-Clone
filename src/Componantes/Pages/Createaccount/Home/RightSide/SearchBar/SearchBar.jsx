@@ -3,12 +3,9 @@
 // import styles from './SearchBar.module.css'
 // const SearchBar=()=> {
 
-// const [query, setQuery] = useState("");
-// const [placeholder, setPlaceholder] = useState("Search Twitter");
-// const handleSubmit = (e) => {
-//     e.preventDefault();
+
   
-//   };
+
 //   const handleInputFocus = () => {
 //     setPlaceholder("Try searching for people, topics, or keywords");
 //   };

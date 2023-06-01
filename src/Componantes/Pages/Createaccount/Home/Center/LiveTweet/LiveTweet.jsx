@@ -5,7 +5,7 @@ import { TweetSlice } from "../../../../../StoreRedux/reducer";
 import style from "./LiveTweet.module.css";
 import FlipMove from "react-flip-move";
 import PostTweet from "../PostTweet/PostTweet";
-// import Avatar from "antd/es/avatar/avatar";
+
 import Avatar from '@mui/material/Avatar';
 import { BsTwitter } from "react-icons/bs";
 import { RiHome7Fill } from "react-icons/ri";

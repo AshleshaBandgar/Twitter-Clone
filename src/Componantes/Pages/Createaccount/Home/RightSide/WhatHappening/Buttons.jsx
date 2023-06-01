@@ -9,4 +9,4 @@ function Buttons({  buttonText, btnNext, customCss }) {
   );
 }
 
-export default Buttons; 
+export default Buttons;

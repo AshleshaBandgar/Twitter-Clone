@@ -76,4 +76,4 @@ const LeftSide = () => {
   )
 }
 
-export default LeftSide
+export default LeftSide;

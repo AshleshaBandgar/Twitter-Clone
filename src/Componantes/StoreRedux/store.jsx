@@ -4,7 +4,6 @@ import {TweetSlice} from './reducer'
 import authReducer from './reducer';
 
 
-
 const store = configureStore({
     reducer:{
         auth: authReducer,

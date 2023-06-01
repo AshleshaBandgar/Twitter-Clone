@@ -2,7 +2,7 @@
     padding-bottom: 10px;
     border-bottom: 8px solid var(--twitter-background);
     padding-right: 10px;
-    /* border: 1px solid red; */
+   
     border-right: 1px solid #EFF1F1 !important ;
     border-left: 1px solid #EFF1F1 !important ;
   }
@@ -30,7 +30,7 @@
     display: flex;
   }
   .tweetBox textarea {
-    /* border: 1px solid red; */
+  
     width: 70%;
   }
   

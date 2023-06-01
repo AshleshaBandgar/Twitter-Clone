@@ -9,8 +9,6 @@ import Home from './Componantes/Pages/Createaccount/Home/Home'
 import SecondPage from './Componantes/Pages/Createaccount/SingUp2ndPage/SecondPage';
 import {BrowserRouter , Routes, Route } from "react-router-dom";
 
-// import Center from "./Componantes/Pages/Createaccount/CenterPage/Center";
-// import Center from './Componantes/Pages/Createaccount/Home/Center/Center'
 
 
 function App() {

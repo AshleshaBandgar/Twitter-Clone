@@ -1,8 +1,7 @@
 // import React, { useState } from "react";
 // import { Avatar } from "@mui/material";
 // import style from "./WhoToFollow.module.css";
-// import Buttons from "../WhatHappening/Buttons";
-// import VerifiedIcon from "@mui/icons-material/Verified";
+
 
 // function WhoToFollow() {
 //     const [followContainer, setFollowContainer] = useState([

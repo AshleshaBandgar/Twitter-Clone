@@ -1,6 +1,6 @@
 import style from "./PostTweet.module.css";
 import React, { useState } from "react";
-// import { Avatar, Button } from "@material-ui/core";
+
 import Avatar from '@mui/material/Avatar';
 import { useDispatch } from "react-redux";
 import { BsTwitter } from "react-icons/bs";

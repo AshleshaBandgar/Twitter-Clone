@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./TrendingBar.module.css";
-// import { CgMoreO } from "react-icons/cg";
+
 import PendingIcon from '@mui/icons-material/Pending';
 import PopoverIcon from "./PopOver";
 const TrendingBar=()=> {

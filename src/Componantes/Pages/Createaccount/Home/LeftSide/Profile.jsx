@@ -11,7 +11,7 @@ export default function Profile() {
     const [open, setOpen] = useState(false);
     const navigate = useNavigate()
 
-    // const Menues = ['Add an existing account', 'Log out @Demo1234']
+   
     function LogOut(){
         navigate("/")
 

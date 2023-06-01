@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import styles from './Center.module.css'
-// import Avatar from "antd/es/avatar/avatar";
+
 
 
 export default function MainPage(){

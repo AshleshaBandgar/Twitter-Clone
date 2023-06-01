@@ -4,7 +4,6 @@ const initialState = {
   isAuthenticated: false,
   token: null,
 };
-
 const userSlice = createSlice({
   name: "User",
   initialState: JSON.parse(localStorage.getItem("users")) || [],

@@ -19,10 +19,10 @@ function Home() {
       </div>
       <div className={styles.TweetContainer}>
         <LiveTweet />
-        {/* <Tweet /> */}
+        
         <PostTweet/>
         <Center />
-        {/* <LiveTweet/> */}
+        
       </div>
 
          <div>

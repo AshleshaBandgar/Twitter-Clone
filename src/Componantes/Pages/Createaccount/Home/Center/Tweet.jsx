@@ -46,7 +46,6 @@ function Tweet(props) {
                 />
            
               </span>
-              {/* <span className={style.name}>@ {tweet.tweetedBy.name}</span> */}
             </h3>
           </div>
           <div className={style.post_headerDescription}>
