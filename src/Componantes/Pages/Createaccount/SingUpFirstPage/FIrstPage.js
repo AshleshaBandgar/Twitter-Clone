@@ -2,7 +2,7 @@
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import React, { useState } from 'react'
 import styles from './FirstPage.module.css'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 import TextField from "@mui/material/TextField";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";

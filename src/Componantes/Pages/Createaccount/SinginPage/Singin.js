@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import styles from './Singin.module.css'
+import React, { useState } from 'react';
+import styles from './Singin.module.css';
 
 // import Box from '@mui/material/Box';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -7,7 +7,7 @@ import TextField from '@mui/material/TextField';
 import CloseIcon from '@mui/icons-material/Close';
 import { FcGoogle } from "react-icons/fc";
 import AppleIcon from '@mui/icons-material/Apple';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 const Singin = () => {
     const[value, setValue] = useState([])    // to manage/store localStorage value
     const[singin , setSingin] = useState([])  

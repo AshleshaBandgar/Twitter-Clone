@@ -5,7 +5,7 @@ import {FcGoogle} from "react-icons/fc"
 import {FaApple} from "react-icons/fa"
 import {GrClose} from "react-icons/gr"
 import { useState,useRef, } from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 
 const SignUp = () => {
