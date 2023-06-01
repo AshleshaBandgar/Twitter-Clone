@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import styles from './Setpswd.module.css'
 // import Box from '@mui/material/Box';
 import TwitterIcon from '@mui/icons-material/Twitter';

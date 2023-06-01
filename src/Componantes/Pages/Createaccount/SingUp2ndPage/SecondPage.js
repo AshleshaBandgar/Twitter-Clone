@@ -1,10 +1,10 @@
 //step2
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import React from "react";
-import styles from './SecondPage.module.css'
+import styles from './SecondPage.module.css';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 
 
